@@ -1,6 +1,48 @@
-/* Style */
+/* Root */
 html    {
     background-color: #E7E7E7;
+    
+}
+
+.card   {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr;
+    min-height: 100%;
+
+    height: 669px;
+    width: 75%;
+    background-color: white;
+    margin: 25px 30px;
+    box-shadow: 10px 10px 40px  #888888;
+    border-radius: 25px;
+}
+
+.headerContainer   {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end:span 2;
+    -ms-grid-row-span: 2;
+    width: 20%;
+    padding: 0px 0px;
+    font-size: 24pt;
+    margin: auto;
+}
+
+a   {
+    text-decoration: none;
+    color: black;
+}
+
+div{
+    display: grid;
+}
+
+
+/*About Me*/
+table   {
+    margin: 0px;
 }
 
 td > p  {
@@ -9,19 +51,24 @@ td > p  {
     font-size: 1.20em;
 }
 
-#aboutMeContainer   {
-    background-color: white;
-    margin: 25px 30px;
+td > a  {
+    height: 100%;
 }
-
-#addressCell    {
-    text-align: center;
-    width: 50%;
-    
+#imgCell img   {
+    border-radius: 25px 0px 0px 25px;
+    height: 100%;
+    margin: 0px;
 }
 
 #imgCell    {
+    margin: 0px;
+}
+
+#infoCell    {
+    text-align: justified;
     width: 50%;
+    padding: 67px;
+    
 }
 
 #name   {
@@ -30,12 +77,101 @@ td > p  {
 }
 
 #email  {
-    text-decoration: none;
-    color: black;
+    
     font-style:italic;
 }
 
 
+/*Education*/
+#educationHeading   {
+    text-align: center;
+
+    padding: 0px 100px;
+}
+
+#highSchool {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-column: 2;
+    grid-row: 1;
+    
+    width: 50%;
+    height: 75%;
+    margin: auto;
+    padding: 10px;
+
+    border-style: solid;
+    border-color: lightgray;
+}
+
+#highSchoolHeading  {
+    margin: auto;
+}
+
+#hsTime {
+    grid-column: 1;
+    grid-row: 3;
+
+    margin: auto;
+}
+#hsDesc {
+    grid-column: 2;
+    grid-row-start: span 2;
+    grid-row-end:span 3;
+
+    margin: auto;
+}
+
+#hsLogo {
+    grid-column: 2;
+    grid-row: 1;
+
+    margin: auto;
+}
+
+#college    {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-column: 2;
+    grid-row: 2;
+    
+    width: 50%;
+    height: 75%;
+    margin: auto;
+    padding: 10px;
+
+    border-style: solid;
+    border-color: lightgray;
+}
+
+#collegeHeading  {
+    margin: auto;
+}
+
+#cName  {
+    margin: auto;
+}
+
+#cTime {
+    grid-column: 1;
+    grid-row: 3;
+
+    margin: auto;
+}
+#cDesc {
+    grid-column: 2;
+    grid-row-start: span 2;
+    grid-row-end:span 3;
+
+    margin: auto;
+}
+
+#cLogo {
+    grid-column: 2;
+    grid-row: 1;
+
+    margin: auto;
+}
 /* NAVIGATION BAR */
 ul {
     list-style-type: none;
