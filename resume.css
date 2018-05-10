@@ -1,5 +1,42 @@
-/* NAVIGATION BAR */
+/* Style */
+html    {
+    background-color: #E7E7E7;
+}
 
+td > p  {
+    margin: 50px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.20em;
+}
+
+#aboutMeContainer   {
+    background-color: white;
+    margin: 25px 30px;
+}
+
+#addressCell    {
+    text-align: center;
+    width: 50%;
+    
+}
+
+#imgCell    {
+    width: 50%;
+}
+
+#name   {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#email  {
+    text-decoration: none;
+    color: black;
+    font-style:italic;
+}
+
+
+/* NAVIGATION BAR */
 ul {
     list-style-type: none;
     margin: 0;
