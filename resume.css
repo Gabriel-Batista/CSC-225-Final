@@ -82,6 +82,35 @@ td > a  {
 }
 
 
+/*Mission Statement*/
+
+#missionStatement   {
+    margin: auto;
+    padding: 20px;
+
+    border-style: solid;
+    border-color: lightgray;
+}
+
+#missionStatement > h3   {
+    padding-left: 30px;
+}
+
+#quotationMark{
+
+    display: block;
+    float: left;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-weight: bold;
+    font-size:100px;
+    color:black;
+    font-family: "Times New Roman", Georgia, Serif;
+    
+}
 /*Education*/
 #educationHeading   {
     text-align: center;
