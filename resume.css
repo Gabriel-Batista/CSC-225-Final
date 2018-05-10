@@ -12,9 +12,9 @@ html    {
     min-height: 100%;
 
     height: 669px;
-    width: 75%;
+    width: 90%;
     background-color: white;
-    margin: 25px 30px;
+    margin: 30px auto;
     box-shadow: 10px 10px 40px  #888888;
     border-radius: 25px;
 
@@ -26,10 +26,13 @@ html    {
     grid-row-start: 1;
     grid-row-end:span 2;
     -ms-grid-row-span: 2;
-    width: 20%;
-    padding: 0px 0px;
+    width: 1fr;
+    padding: 32px 0px 0px auto;
     font-size: 24pt;
-    margin: auto;
+    margin:  0px 0px;
+
+    border-radius: 25px 0px 0px 25px;
+    background: green;
 }
 
 a   {
@@ -39,6 +42,11 @@ a   {
 
 div{
     display: grid;
+}
+
+#footer {
+    height: 200px;
+    background-color: gray;
 }
 
 
@@ -121,6 +129,8 @@ td > a  {
 /*Education*/
 #educationHeading   {
     text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
 
     padding: 0px 100px;
 }
@@ -128,6 +138,7 @@ td > a  {
 #highSchool {
     display: grid;
     grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-column: 2;
     grid-row: 1;
     
@@ -173,6 +184,7 @@ td > a  {
 #college    {
     display: grid;
     grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-column: 2;
     grid-row: 2;
     
@@ -218,13 +230,198 @@ td > a  {
 
     margin: auto;
 }
+
+/*EMPLOYMENT*/
+
+#employmentHeading   {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+
+    padding: 0px 100px;
+}
+
+#hpMovers {
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 2;
+    grid-row: 1;
+    
+    width: 50%;
+    height: 75%;
+    margin: auto;
+    padding: 10px;
+
+    border-style: solid;
+    border-color: lightgray;
+
+    box-shadow: 10px 10px 40px  #888888;
+    border-radius: 25px;
+
+    background-color: white;
+}
+
+#hpmHeading  {
+    margin: auto;
+}
+
+#hpmName {
+    margin: auto;
+}
+
+#hpmTime {
+    grid-column: 1;
+    grid-row: 3;
+
+    margin: auto;
+}
+#hpmDesc {
+    grid-column: 2;
+    grid-row-start: span 2;
+    grid-row-end:span 3;
+
+    margin: auto;
+}
+
+#hpmLogo {
+    grid-column: 2;
+    grid-row: 1;
+
+    margin: auto;
+}
+
+#geekSquad    {
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 2;
+    grid-row: 2;
+    
+    width: 50%;
+    height: 75%;
+    margin: auto;
+    padding: 10px;
+
+    border-style: solid;
+    border-color: lightgray;
+
+    box-shadow: 10px 10px 40px  #888888;
+    border-radius: 25px;
+
+    background-color: white;
+}
+
+#geekSquadHeading  {
+    margin: auto;
+}
+
+#gsName  {
+    margin: auto;
+}
+
+#gsTime {
+    grid-column: 1;
+    grid-row: 3;
+
+    margin: auto;
+}
+#gsDesc {
+    grid-column: 2;
+    grid-row-start: span 2;
+    grid-row-end:span 3;
+
+    margin: auto;
+}
+
+#gsLogo {
+    grid-column: 2;
+    grid-row: 1;
+
+    margin: auto;
+}
+
+gsLogo > img    {
+    display: grid;
+    height: 144px;
+    width: 94px;
+
+    margin: auto;   
+}
+
+/*Hobbies*/
+
+/* #hobbiesContainer   {
+    grid-template-columns:1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 1;
+    grid-row:span 2;
+} */
+
+#hobbiesHeading   {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+
+    padding: 32px 0px 0px auto;
+    margin: 21.4px 0px 0px 0px;
+}
+
+#gsVideo    {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-column: 2;
+    grid-row: 1;
+    
+    width: 50%;
+    height: 75%;
+    margin: auto;
+    padding: 10px;
+
+    border-style: solid;
+    border-color: lightgray;
+
+    box-shadow: 10px 10px 40px  #888888;
+    border-radius: 25px;
+
+    background-color: white;
+}
+
+#hobbies    {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-column: 2;
+    grid-row: 2;
+    
+    width: 50%;
+    height: 75%;
+    margin: auto;
+    padding: 10px ;
+
+    border-style: solid;
+    border-color: lightgray;
+
+    box-shadow: 10px 10px 40px  #888888;
+    border-radius: 25px;
+
+    text-align: center;
+    background-color: white;
+}
+
+#gsVideo > iframe   {
+    display: grid;
+    margin: auto;
+}
+
+
 /* NAVIGATION BAR */
 ul {
-    list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
+    margin: auto 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    text-decoration: none;
 }
 
 li {
