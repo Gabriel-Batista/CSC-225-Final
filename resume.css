@@ -17,6 +17,8 @@ html    {
     margin: 25px 30px;
     box-shadow: 10px 10px 40px  #888888;
     border-radius: 25px;
+
+    background-color: rgba(144,238,144, .7);
 }
 
 .headerContainer   {
@@ -90,6 +92,11 @@ td > a  {
 
     border-style: solid;
     border-color: lightgray;
+
+    box-shadow: 10px 10px 40px  #888888;
+    border-radius: 25px;
+
+    background-color: white;
 }
 
 #missionStatement > h3   {
@@ -131,6 +138,11 @@ td > a  {
 
     border-style: solid;
     border-color: lightgray;
+
+    box-shadow: 10px 10px 40px  #888888;
+    border-radius: 25px;
+
+    background-color: white;
 }
 
 #highSchoolHeading  {
@@ -171,6 +183,11 @@ td > a  {
 
     border-style: solid;
     border-color: lightgray;
+
+    box-shadow: 10px 10px 40px  #888888;
+    border-radius: 25px;
+
+    background-color: white;
 }
 
 #collegeHeading  {
